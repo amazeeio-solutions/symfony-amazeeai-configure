@@ -2,6 +2,23 @@
 
 Symfony command to configure the amazee.ai provider via email-based authentication.
 
+## Installation
+
+Install the bundle via Composer:
+
+```bash
+composer require amazeeio/symfony-amazeeai-configure
+```
+
+If you're using Symfony Flex, the bundle will be automatically registered. Otherwise, add it to your `config/bundles.php`:
+
+```php
+return [
+    // ...
+    AmazeeIO\AmazeeAIConfigure\AmazeeAiConfigureBundle::class => ['all' => true],
+];
+```
+
 ## Configure
 
 A Symfony Console command is used to configure amazee.ai LLM and Vector Database providers with

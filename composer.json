@@ -1,7 +1,7 @@
 {
     "name": "amazeeio/symfony-amazeeai-configure",
     "description": "Symfony command to configure the amazee.ai provider via email-based authentication.",
-    "type": "project",
+    "type": "symfony-bundle",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -11,8 +11,11 @@
     ],
     "require": {
         "php": ">=8.4",
+        "symfony/config": "^8.0",
         "symfony/console": "^8.0",
+        "symfony/dependency-injection": "^8.0",
         "symfony/http-client": "^8.0",
+        "symfony/http-kernel": "^8.0",
         "symfony/process": "^8.0"
     },
     "require-dev": {
