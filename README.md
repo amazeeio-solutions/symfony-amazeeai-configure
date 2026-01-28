@@ -1,5 +1,7 @@
 # Symfony AI | amazee.ai configure
 
+[![CI](https://github.com/amazeeio-solutions/symfony-amazeeai-configure/actions/workflows/ci.yml/badge.svg)](https://github.com/amazeeio-solutions/symfony-amazeeai-configure/actions/workflows/ci.yml)
+
 Symfony command to configure the amazee.ai provider via email-based authentication.
 
 ## Installation
