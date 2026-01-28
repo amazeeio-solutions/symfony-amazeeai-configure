@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure\Exception;
+namespace AmazeeIo\AmazeeAiConfigure\Exception;
 
 /**
  * Exception thrown when Amazee AI API requests fail.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure\Tests\Mock;
+namespace AmazeeIo\AmazeeAiConfigure\Tests\Mock;
 
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure\Tests\Service;
+namespace AmazeeIo\AmazeeAiConfigure\Tests\Service;
 
-use AmazeeIO\AmazeeAIConfigure\SecretsWriter;
+use AmazeeIo\AmazeeAiConfigure\SecretsWriter;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;

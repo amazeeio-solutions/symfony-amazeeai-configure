@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure\Tests\Service;
+namespace AmazeeIo\AmazeeAiConfigure\Tests\Service;
 
-use AmazeeIO\AmazeeAIConfigure\AmazeeAiClient;
-use AmazeeIO\AmazeeAIConfigure\Exception\AmazeeAiApiException;
-use AmazeeIO\AmazeeAIConfigure\Tests\Mock\AmazeeApiMockResponses;
+use AmazeeIo\AmazeeAiConfigure\AmazeeAiClient;
+use AmazeeIo\AmazeeAiConfigure\Exception\AmazeeAiApiException;
+use AmazeeIo\AmazeeAiConfigure\Tests\Mock\AmazeeApiMockResponses;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;

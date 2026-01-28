@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure;
+namespace AmazeeIo\AmazeeAiConfigure;
 
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Input\InputInterface;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure\Command;
+namespace AmazeeIo\AmazeeAiConfigure\Command;
 
-use AmazeeIO\AmazeeAIConfigure\AmazeeAiConfigurationInterface;
+use AmazeeIo\AmazeeAiConfigure\AmazeeAiConfigurationInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;

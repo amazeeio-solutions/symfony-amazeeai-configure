@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use AmazeeIO\AmazeeAIConfigure\AmazeeAiClient;
-use AmazeeIO\AmazeeAIConfigure\AmazeeAiClientInterface;
-use AmazeeIO\AmazeeAIConfigure\AmazeeAiConfiguration;
-use AmazeeIO\AmazeeAIConfigure\AmazeeAiConfigurationInterface;
-use AmazeeIO\AmazeeAIConfigure\Command\AmazeeAiConfigureCommand;
-use AmazeeIO\AmazeeAIConfigure\EnvFileWriter;
-use AmazeeIO\AmazeeAIConfigure\SecretsWriter;
+use AmazeeIo\AmazeeAiConfigure\AmazeeAiClient;
+use AmazeeIo\AmazeeAiConfigure\AmazeeAiClientInterface;
+use AmazeeIo\AmazeeAiConfigure\AmazeeAiConfiguration;
+use AmazeeIo\AmazeeAiConfigure\AmazeeAiConfigurationInterface;
+use AmazeeIo\AmazeeAiConfigure\Command\AmazeeAiConfigureCommand;
+use AmazeeIo\AmazeeAiConfigure\EnvFileWriter;
+use AmazeeIo\AmazeeAiConfigure\SecretsWriter;
 
 return static function (ContainerConfigurator $container): void {
     $services = $container->services()

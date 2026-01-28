@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure\Dto;
+namespace AmazeeIo\AmazeeAiConfigure\Dto;
 
 /**
  * An Amazee AI Model with information about which features are supported.

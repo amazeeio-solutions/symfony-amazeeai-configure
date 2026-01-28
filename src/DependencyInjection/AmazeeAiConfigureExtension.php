@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure\DependencyInjection;
+namespace AmazeeIo\AmazeeAiConfigure\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "AmazeeIO\\AmazeeAIConfigure\\": "src/"
+            "AmazeeIo\\AmazeeAiConfigure\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AmazeeIO\\AmazeeAIConfigure\\Tests\\": "tests/"
+            "AmazeeIo\\AmazeeAiConfigure\\Tests\\": "tests/"
         }
     },
     "authors": [

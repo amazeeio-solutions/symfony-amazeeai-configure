@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure;
+namespace AmazeeIo\AmazeeAiConfigure;
 
-use AmazeeIO\AmazeeAIConfigure\Dto\Model;
-use AmazeeIO\AmazeeAIConfigure\Exception\AmazeeAiApiException;
+use AmazeeIo\AmazeeAiConfigure\Dto\Model;
+use AmazeeIo\AmazeeAiConfigure\Exception\AmazeeAiApiException;
 use Psr\Log\LoggerInterface;
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;

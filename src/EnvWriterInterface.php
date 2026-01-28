@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure;
+namespace AmazeeIo\AmazeeAiConfigure;
 
 /**
  * Interface for writing environment variables.

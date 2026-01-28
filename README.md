@@ -15,7 +15,7 @@ If you're using Symfony Flex, the bundle will be automatically registered. Other
 ```php
 return [
     // ...
-    AmazeeIO\AmazeeAIConfigure\AmazeeAiConfigureBundle::class => ['all' => true],
+    AmazeeIo\AmazeeAiConfigure\AmazeeAiConfigureBundle::class => ['all' => true],
 ];
 ```
 

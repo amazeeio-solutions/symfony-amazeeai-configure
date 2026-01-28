@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AmazeeIO\AmazeeAIConfigure;
+namespace AmazeeIo\AmazeeAiConfigure;
 
-use AmazeeIO\AmazeeAIConfigure\Exception\AmazeeAiApiException;
+use AmazeeIo\AmazeeAiConfigure\Exception\AmazeeAiApiException;
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
