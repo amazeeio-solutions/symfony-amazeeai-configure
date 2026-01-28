@@ -1,0 +1,22 @@
+###> composer ###
+/vendor/
+/compose.override.yaml
+/composer.lock
+###< composer ###
+
+###> IDE ###
+/.idea
+###< IDE ###
+
+###> phpstan/phpstan ###
+/phpstan.neon
+###< phpstan/phpstan ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+/.phpunit.cache/
+###< phpunit/phpunit ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
