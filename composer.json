@@ -24,7 +24,8 @@
         "phpunit/phpunit": "^12.5",
         "symfony/dotenv": "^8.0",
         "friendsofphp/php-cs-fixer": "^3.93",
-        "phpstan/phpstan-symfony": "^2.0"
+        "phpstan/phpstan-symfony": "^2.0",
+        "spatie/ray": "^1.45"
     },
     "autoload": {
         "psr-4": {
