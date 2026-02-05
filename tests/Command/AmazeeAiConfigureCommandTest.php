@@ -171,8 +171,7 @@ final class AmazeeAiConfigureCommandTest extends TestCase
         $this->assertSame('Configures the amazee.ai provider via email-based authentication.', $command->getDescription());
         $this->assertTrue($command->getDefinition()->hasArgument('email'));
         $this->assertTrue($command->getDefinition()->hasOption('private-key-name'));
-        $this->assertTrue($command->getDefinition()->hasOption('test-mode'));
-        $this->assertTrue($command->getDefinition()->hasArgument('test-api-host'));
+        $this->assertTrue($command->getDefinition()->hasOption('api-host'));
     }
 
     private function setAppEnv(string $value): void
