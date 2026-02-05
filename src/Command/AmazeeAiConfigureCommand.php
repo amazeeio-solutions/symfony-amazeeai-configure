@@ -37,22 +37,17 @@ final class AmazeeAiConfigureCommand extends Command
                 'The email address to use for authentication',
             )
             ->addOption(
-                'private-key-name',
-                'pk',
-                InputOption::VALUE_OPTIONAL,
-                'Private key name for (defaults to hostname)',
-                gethostname() ?: 'amazee_ai',
+                'api-host',
+                'a',
+                InputOption::VALUE_REQUIRED,
+                'API hostname. Can be overridden for development purpose.',
             )
             ->addOption(
-                'test-mode',
-                't',
-                InputOption::VALUE_NONE,
-                'Enable test mode.',
-            )
-            ->addArgument(
-                'test-api-host',
-                InputArgument::OPTIONAL,
-                'Test API hostname. To be used in test mode, for development purpose only.',
+                'private-key-name',
+                'k',
+                InputOption::VALUE_REQUIRED,
+                'Private key name for (defaults to hostname)',
+                gethostname() ?: 'amazee_ai',
             )
             ->setHelp(<<<'HELP'
                 The <info>%command.name%</info> command configures the amazee.ai provider.
@@ -69,9 +64,9 @@ final class AmazeeAiConfigureCommand extends Command
         $questionHelper = $this->getHelper('question');
         $email = $input->getArgument('email');
         $useSecrets = $this->configuration->useSecrets();
-        $isTestMode = $input->getOption('test-mode');
-        $testApiHostname = $input->getArgument('test-api-host');
+
         $privateKeyName = $input->getOption('private-key-name');
+        $apiHostName = $input->getOption('api-host');
 
         $io->title('amazee.ai Provider Configuration');
 
@@ -90,10 +85,6 @@ final class AmazeeAiConfigureCommand extends Command
             $io->error('Invalid email address provided.');
 
             return Command::FAILURE;
-        }
-
-        if ($isTestMode && empty($testApiHostname)) {
-            $io->error('Test API hostname cannot be empty when using the test mode.');
         }
 
         // Step 1: Request verification code.
