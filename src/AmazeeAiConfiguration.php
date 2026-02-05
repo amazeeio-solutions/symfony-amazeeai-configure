@@ -188,6 +188,11 @@ final class AmazeeAiConfiguration implements AmazeeAiConfigurationInterface
         $this->envFileWriter->write($envVars);
     }
 
+    public function setApiHost(string $host): void
+    {
+        $this->client->setHost($host);
+    }
+
     private function getEnvValue(string $key): ?string
     {
         $value = $_SERVER[$key] ?? $_ENV[$key] ?? getenv($key);

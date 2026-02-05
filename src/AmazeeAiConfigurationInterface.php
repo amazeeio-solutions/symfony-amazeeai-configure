@@ -76,4 +76,11 @@ interface AmazeeAiConfigurationInterface
      * @param array<string, mixed> $apiKeyData
      */
     public function persistConfiguration(array $apiKeyData, bool $useSecrets): void;
+
+    /**
+     * Set the API host.
+     *
+     * Used to override the default one for development purpose.
+     */
+    public function setApiHost(string $host): void;
 }

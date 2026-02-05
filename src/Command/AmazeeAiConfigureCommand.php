@@ -68,6 +68,10 @@ final class AmazeeAiConfigureCommand extends Command
         $privateKeyName = $input->getOption('private-key-name');
         $apiHostName = $input->getOption('api-host');
 
+        if (null !== $apiHostName && '' !== $apiHostName) {
+            $this->configuration->setApiHost($apiHostName);
+        }
+
         $io->title('amazee.ai Provider Configuration');
 
         // Check if amazee.ai is already configured.
