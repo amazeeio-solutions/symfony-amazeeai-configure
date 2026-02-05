@@ -51,15 +51,10 @@ these should be stored with [Symfony secrets](https://symfony.com/doc/current/co
 
 ## Development
 
-By default, API requests are using the `prod` environment: https://api.amazee.ai.
+By default, API requests are using the `prod` environment: `api.amazee.ai`.
 
 Use the `-a` option to redirect API requests to `dev` or `stage` API environments.
 
-- `dev` https://backend.dev.amazeeai.us2.amazee.io
-- `stage` https://backend.main.amazeeai.us2.amazee.io
-
-Example, for `dev`
-
 ```bash
-symfony console ai:amazee:configure user@example.com -a backend.dev.amazeeai.us2.amazee.io
+symfony console ai:amazee:configure user@example.com -a dev.api.example.com
 ```
