@@ -59,3 +59,27 @@ Use the `-a` option to redirect API requests to `dev` or `stage` API environment
 ```bash
 symfony console ai:amazee:configure user@example.com -a dev.api.example.com
 ```
+
+### Contributing
+
+This project uses git hooks to enforce code quality standards:
+
+#### Conventional Commits
+
+All commit messages must follow the [Conventional Commits](https://www.conventionalcommits.org/) specification. The format is:
+
+```
+<type>[optional scope][!]: <description>
+```
+
+**Allowed types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+
+**Examples:**
+```
+feat: add user authentication
+fix(api): resolve null pointer exception
+feat!: breaking change in API
+docs: update installation instructions
+```
+
+The git `commit-msg` hook will automatically validate your commit messages using [CaptainHook](https://github.com/captainhookphp/captainhook).

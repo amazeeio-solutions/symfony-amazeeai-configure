@@ -25,7 +25,9 @@
         "symfony/dotenv": "^8.0",
         "friendsofphp/php-cs-fixer": "^3.93",
         "phpstan/phpstan-symfony": "^2.0",
-        "spatie/ray": "^1.45"
+        "spatie/ray": "^1.45",
+        "captainhook/captainhook": "^5.23",
+        "captainhook/plugin-composer": "^5.3"
     },
     "autoload": {
         "psr-4": {
@@ -42,5 +44,10 @@
             "name": "Christophe Jossart",
             "email": "christophe.jossart@amazee.io"
         }
-    ]
+    ],
+    "config": {
+        "allow-plugins": {
+            "captainhook/plugin-composer": true
+        }
+    }
 }

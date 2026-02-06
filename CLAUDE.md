@@ -17,6 +17,7 @@ vendor/bin/phpunit --filter testMethod    # Run specific test method
 vendor/bin/phpstan analyse                # Static analysis (level 8)
 vendor/bin/php-cs-fixer fix               # Fix code style
 vendor/bin/php-cs-fixer fix --dry-run --diff  # Check code style without fixing
+vendor/bin/captainhook install            # Install git hooks (automatic on composer install)
 ```
 
 ### Using the Bundle
@@ -57,6 +58,31 @@ Uses PHP-CS-Fixer with `@Symfony` ruleset plus strict rules:
 - Strict comparisons (`===`)
 - All classes are final by default
 - PHPStan level 8
+
+## Git Hooks & Commit Convention
+
+This project uses CaptainHook to enforce code quality standards via git hooks:
+
+### Conventional Commits
+All commit messages must follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+
+```
+<type>[optional scope][!]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+**Allowed types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+
+**Examples:**
+- `feat: add user authentication`
+- `fix(api): resolve null pointer exception`
+- `feat!: breaking change in API`
+- `docs: update installation instructions`
+
+The `commit-msg` hook will automatically validate your commit messages and reject commits that don't follow this format.
 
 ## Testing
 
