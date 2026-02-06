@@ -62,7 +62,14 @@ symfony console ai:amazee:configure user@example.com -a dev.api.example.com
 
 ### Contributing
 
-This project uses git hooks to enforce code quality standards:
+For contribution in general, refer to [Symfony Contributing](https://symfony.com/doc/current/contributing/index.html).
+
+This project uses git hooks to enforce conventional commits.
+
+The CI will trigger
+- PHPStan `vendor/bin/phpstan analyse`
+- PHPUnit `vendor/bin/phpunit`
+- PHPCS fixer `vendor/bin/php-cs-fixer fix`
 
 #### Conventional Commits
 
