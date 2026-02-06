@@ -168,6 +168,7 @@ final class AmazeeAiConfiguration implements AmazeeAiConfigurationInterface
             $envVars['AMAZEEAI_VDB_NAME'] = $apiKeyData['database_name'] ?? '';
             $envVars['AMAZEEAI_VDB_USER'] = $apiKeyData['database_username'] ?? '';
             $envVars['AMAZEEAI_VDB_PASSWORD'] = $apiKeyData['database_password'] ?? '';
+            $envVars['AMAZEEAI_VDB_DSN'] = 'pgsql:host=${AMAZEEAI_VDB_HOST};port=${AMAZEEAI_VDB_PORT};dbname=${AMAZEEAI_VDB_NAME}';
         }
 
         if ($useSecrets) {
