@@ -6,7 +6,21 @@ Symfony command to configure the amazee.ai provider via email-based authenticati
 
 ## Installation
 
-Install the bundle via Composer:
+Install the bundle via Composer
+
+This package is a pre-release that will be published on Packagist,
+for now configure this repository in `composer.json`
+
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/amazeeio-solutions/symfony-amazeeai-configure.git"
+        }
+    ]
+}
+```
 
 ```bash
 composer require amazeeio/symfony-amazeeai-configure
