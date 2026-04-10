@@ -16,7 +16,7 @@ for now configure this repository in `composer.json`
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/amazeeio-solutions/symfony-amazeeai-configure.git"
+            "url": "https://github.com/amazeeio/symfony-amazeeai-configure.git"
         }
     ]
 }
